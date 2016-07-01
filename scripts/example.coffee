@@ -15,6 +15,6 @@ module.exports = (robot) ->
   enterReplies = ['ちょっと焼いてかない？', 'ああ＾～いいっすね～', '入って、どうぞ']
   leaveReplies = ['あのさぁ……', 'あっ、ふーん…（察し）']
   robot.enter (res) ->
-    res.send res.random enterReplies
+    res.reply res.random enterReplies
   robot.leave (res) ->
-    res.send res.random leaveReplies
+    res.reply res.random leaveReplies
